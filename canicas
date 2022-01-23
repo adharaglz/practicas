@@ -1,0 +1,15 @@
+from random import choice
+
+canicas=["canica negra","canica roja"]
+resultado=choice(canicas)
+
+
+import tkinter
+ventana = tkinter.Tk()
+ventana.title("Juego de las canicas")
+ventana.geometry("300x300")
+
+boton1 = tkinter.Button(ventana, text = "Presiona", command = lambda: print(resultado))
+boton1.pack()
+
+ventana.mainloop()#para que se ejecute la interfaz
